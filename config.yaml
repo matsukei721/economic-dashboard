@@ -1,0 +1,23 @@
+app:
+  title: "経済指標ダッシュボード"
+  layout: "wide"
+
+# World Bank 公開API（認証不要）
+worldbank:
+  base_url: "https://api.worldbank.org/v2"
+  country: "JP"
+  cpi_indicator: "FP.CPI.TOTL"
+  default_years: 20
+
+# 景気動向指数設定
+business_cycle:
+  start_year: 1990
+  end_year: 2024
+  source: "sample"  # "sample" のみ対応（将来的にAPIへ拡張可能）
+
+# グラフ共通設定
+chart:
+  cpi_color: "#1f77b4"
+  business_cycle_color: "#ff7f0e"
+  height: 500
+  template: "plotly_white"

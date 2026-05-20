@@ -1,0 +1,26 @@
+[project]
+name = "economic-dashboard"
+version = "0.1.0"
+description = "消費者物価指数・景気動向指数ダッシュボード"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.32.0",
+    "plotly>=5.19.0",
+    "pandas>=2.2.0",
+    "requests>=2.31.0",
+    "loguru>=0.7.2",
+    "pyyaml>=6.0.1",
+    "numpy>=1.26.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.3.0",
+]

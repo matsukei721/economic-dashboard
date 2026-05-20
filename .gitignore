@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# 仮想環境
+.venv/
+venv/
+.env
+
+# uv
+.uv/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ログ
+*.log
+logs/
