@@ -11,9 +11,15 @@ worldbank:
 
 # 景気動向指数設定
 business_cycle:
-  start_year: 1990
-  end_year: 2024
-  source: "sample"  # "sample" のみ対応（将来的にAPIへ拡張可能）
+  source: "estat" # "estat" or "sample"
+  # e-Stat 統計データID
+  # 確認方法: https://www.e-stat.go.jp で「景気動向指数」検索 → 統計表 → IDをコピー
+  stats_data_id: "0003446461"
+  # 系列コード（先行:100 一致:110 遅行:120）
+  cat01: "110"
+  # 表章項目コード（CI指数:100 外れ値なしCI:110 DI:120 DI累積:130）
+  tab: "100"
+  start_year: 2000
 
 # グラフ共通設定
 chart:

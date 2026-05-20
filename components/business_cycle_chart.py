@@ -41,7 +41,7 @@ def render_business_cycle_chart(df: pd.DataFrame, config: dict) -> None:
     )
 
     fig.update_layout(
-        title="景気動向指数（CI）の推移（サンプルデータ）",
+        title="景気動向指数（CI）の推移",
         xaxis_title="年月",
         yaxis_title="CI値",
         height=config["height"],

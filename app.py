@@ -9,7 +9,10 @@ from typing import Any
 
 import streamlit as st
 import yaml
+from dotenv import load_dotenv
 from loguru import logger
+
+load_dotenv()
 
 from components.business_cycle_chart import render_business_cycle_chart
 from components.cpi_chart import render_cpi_chart
@@ -55,7 +58,7 @@ def main() -> None:
     st.markdown(
         "消費者物価指数（CPI）と景気動向指数のトレンドを可視化します。"
         "　CPIは [World Bank API](https://data.worldbank.org/) から取得、"
-        "景気動向指数はサンプルデータを使用しています。"
+        "景気動向指数は [e-Stat（内閣府）](https://www.e-stat.go.jp/) から取得しています。"
     )
 
     # サイドバー設定
